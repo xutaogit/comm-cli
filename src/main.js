@@ -1,5 +1,6 @@
 const program = require('commander');
 const path = require('path');
+const colors = require('colors');
 
 const {
   version,
@@ -27,4 +28,12 @@ program.on('--help', () => {
     });
   });
 });
+
+// 如果命令后面未带任何参数，则默认输出 -h 命令的内容
+function makeRed(txt) {
+  return colors.green(txt); // display the help text in red on the console
+}
+if (!process.argv.slice(2).length) {
+  program.outputHelp(makeRed);
+}
 program.version(version).parse(process.argv);

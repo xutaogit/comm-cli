@@ -1,7 +1,9 @@
 {
   "name": "comm-cli",
-  "version": "1.0.0",
-  "description": "> 基于 nodejs 8.11.3 开发",
+  "version": "1.0.2",
+  "description": "前端通用脚手架",
+  "homepage": "https://github.com/xutaogit/comm-cli",
+  "repository": "xutaogit/comm-cli",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,6 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.19.2",
+    "colors": "^1.4.0",
     "commander": "^4.1.1",
     "consolidate": "^0.15.1",
     "download-git-repo": "^3.0.2",

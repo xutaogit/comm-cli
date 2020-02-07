@@ -30,7 +30,7 @@ const fetchReportList = async function () {
   const {
     data,
   } = await axios.get(
-    'https://api.github.com/users/xutaogit/repos',
+    'https://api.github.com/orgs/tao-cli/repos',
   );
   return data;
 };
@@ -40,7 +40,7 @@ const fetchReportTags = async function (repo) {
   const {
     data,
   } = await axios.get(
-    `https://api.github.com/repos/xutaogit/${repo}/tags`,
+    `https://api.github.com/repos/tao-cli/${repo}/tags`,
   );
   return data;
 };
@@ -55,7 +55,7 @@ const loadFn = (fn, message) => async (...args) => {
 };
 // 下载仓库文件
 const download = async (repo, tag) => {
-  let api = `xutaogit/${repo}`; // 下载路径为用户名（组织名）加仓库
+  let api = `tao-cli/${repo}`; // 下载路径为用户名（组织名）加仓库
   if (tag) {
     // 如果有选tag则添加tag路径
     api += `#${tag}`;
