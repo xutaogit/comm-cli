@@ -15,7 +15,7 @@
   "author": "sam",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "colors": "^1.4.0",
     "commander": "^4.1.1",
     "consolidate": "^0.15.1",
